@@ -52,14 +52,7 @@ struct PushNotificationManager {
     }
     
     static func send(_ token: DeviceToken) {
-        //Send device token to server
-        if APPDELEGATE.currentUser != nil{
-            let user = APPDELEGATE.currentUser
-            user?.deviceToken = token.data
-            APPDELEGATE.currentUser = user
-            Utilities.saveCustomObject(object: APPDELEGATE.currentUser, key: kCurrentUser)
-        }
-        
+        //Send device token to server        
         
     }
 
