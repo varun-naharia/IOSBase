@@ -23,7 +23,7 @@ class IBLoginController: IBBaseController {
         #else
             print("Running in release mode")
         #endif
-        didLoginUser()
+//        didLoginUser()
         print(AppURL.BaseURL)
     }
 
